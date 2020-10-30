@@ -468,13 +468,19 @@ font-size:0.9em;
 @media (max-width: 640px) {
 	.main {
 		display:flex;
-		width: 90%;
-		height: 90%;
+		min-width: 80%;
+		margin: 15px;
 	}
 
 
 	body {
 		width: 100%;
+		margin: 0;
+	}
+
+	
+	.header {
+		min-width: 100%;
 	}
 
 }
@@ -482,12 +488,18 @@ font-size:0.9em;
 	@media (max-width: 840px) {
 		.main {
 			display:flex;
-			width: 90%;
-			height: 90%;
+		    min-width: 80%;
+   			 margin: 15px;
+
 		}
 
 		body {
 			width: 100%;
+			margin: 0;
+		}
+
+		.header {
+			min-width: 100%;
 		}
 	
 		}
