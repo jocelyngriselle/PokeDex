@@ -1,0 +1,464 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+
+
+
+body {
+    background: linear-gradient(to right, rgba(36,31,31,1) 0%, rgba(36,31,31,1) 32%, rgba(74,71,70,1) 100%);
+    height:100vh;
+    display:flex;
+    justify-content: center;
+    align-items : center;
+  }
+  
+.main {
+    display :flex;
+    flex-direction: column;
+    min-width:400px;
+}
+
+.content
+{
+    box-shadow:inset 0px 1px 0px 0px #ffffff;
+	background:linear-gradient(to bottom, #cccccc 10%, #dfdfdf 100%);
+	background-color:#ededed;
+    border-radius:6px;
+    border:1px solid #dcdcdc;
+    margin: 15px;
+    padding: 10px;
+
+}
+
+.multiorb {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin-left:10px;
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    min-width:400px;
+    min-height:80px;
+    border-radius:6px;
+    border : 1px #4F0707 solid; 
+    box-shadow : 1px 2px 4px rbga(0, 0, 0, 0.5);
+    background: rgb(70,5,5);
+    background: linear-gradient(7deg, rgba(150,5,5,1) 0%, rgba(230,10,10,1) 92%);
+    box-shadow:inset 0px 2px 0px 0px #cf866c;
+    margin-bottom: 15px;
+
+
+}
+
+.header img {
+    height: 90px;
+    padding:5px;
+}
+
+
+  .pokemon {
+    min-width:180px;
+    text-align:center;
+    padding: 25px;
+    border-radius:6px;
+    border : 1px #4F0707 solid; 
+    box-shadow : 1px 2px 4px rbga(0, 0, 0, 0.5);
+    background: rgb(70,5,5);
+    background: linear-gradient(7deg, rgba(70,5,5,1) 0%, rgba(230,10,10,1) 92%);
+    box-shadow:inset 0px 2px 0px 0px #cf866c;
+    font-family: 'Righteous', cursive;
+  }
+  
+  .pokemon .name {
+    font-size:2em;
+    text-transform: uppercase;
+    font-weight: bold; 
+    color: black;
+   
+  }
+
+  .type {
+    display: flex;
+    align-self: center;
+    background:linear-gradient(to bottom, #ededed 10%, #dfdfdf 100%);
+	background-color:#ededed;
+    border-radius:6px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .pokemon .id {
+	font-size:1em;
+	margin-top: -5px;
+  }
+  
+  .pokemon .details {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin : 1em 0 0;
+    text-transform: uppercase;
+  }
+
+.info {
+    display: flex;
+    flex-direction:column;
+    justify-content: space-between;
+    height: 150px;
+
+	box-shadow:inset 0px 1px 0px 0px #ffffff;
+	background:linear-gradient(to bottom, #ffffff 5%, #f6f6f6 100%);
+	background-color:#ffffff;
+	border-radius:6px;
+	border:1px solid #dcdcdc;
+    margin-top:20px;
+    padding : 10px;
+}
+
+.info p {
+    font-size:0.8em; 
+
+}
+
+.info p span {
+    font-size:0.8em; 
+	background-color:#9A0F00;
+    border-radius:5px;
+    padding : 10px;
+    margin : 10px;
+    color:white;
+
+}
+
+.info > span {
+
+    font-size:0.8em; 
+}
+  
+  .content img {
+    min-height:120px;
+    background-color : rgba(255, 255, 255, 0.6);
+    border-radius:50%; 
+  width : 130px; 
+  height : 130px; 
+
+  }
+
+  .navigation {
+    display:flex;
+    flex-direction:row;
+    justify-content: space-around;
+    margin-top:5%;
+}
+  
+  button {
+        box-shadow:inset 0px 1px 0px 0px #cf866c;
+        background: linear-gradient(7deg, rgba(70,5,5,1) 0%, rgba(230,10,10,1) 92%);
+        border-radius:3px;
+        border:1px solid #4F0707;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        cursor:pointer;
+        color:#ffffff;
+        font-family:Arial;
+        font-size:13px;
+        text-decoration:none;
+        text-shadow:0px 1px 0px #854629;
+        width: 45%;
+        outline-style:none;
+        padding-left: 10%;
+        padding-right: 10%;
+    
+    }
+    button:hover {
+        background: linear-gradient(7deg, rgba(100,5,5,1) 0%, rgba(230,10,10,1) 92%);
+        background-color:#bc3315;
+    }
+    button:active {
+        position:relative;
+        outline-style:none;
+    }
+    
+  
+button img {
+width:30px;
+}
+
+.arrow {
+font-size:3em;
+font-family: 'Righteous', cursive;
+}
+
+.vie {
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+align-items: center;
+font-size:0.9em;
+}
+
+.vie img {
+    height: 35px;
+    padding:5px;
+}
+
+
+
+
+
+
+/* diamond shape */
+.glow {
+	width: 48px;
+	height: 48px;
+	transform: rotate(45deg);
+	background: #C0FFE4;
+	box-shadow: 1px 1px 0 #1D8758, 0 0 20px 5px #C0FFE4, inset 2px 2px 0 #D3FFEC;
+	animation: glow 2s infinite ease;
+}
+.glow:before,
+.glow:after {
+	content: '';
+	display: block;
+	position: absolute;
+}
+.glow:before {
+	width: 22px;
+	height: 22px;
+	top: 11px;
+	left: 11px;
+	background: rgba(255,255,255,0.25);
+	border: 2px solid rgba(255,255,255,0.5);
+	box-shadow: 0 0 2px 3px #B3F6D9;
+	box-shadow: 1px 1px 0 #A2E6C9, 0 0 20px 5px #C0FFE4, inset 2px 2px 0 #D3FFEC;
+}
+.glow:after {
+	left: 0;
+	width: 4px;
+	height: 48px;
+	background: #fff;
+	z-index: 5;
+	animation: sheen 5s infinite;
+}
+
+/* animates box shadow glow effect */
+@keyframes glow {
+	0%,100% {
+		box-shadow: 1px 1px #1D8758, 0 0 20px 5px #8FFFCF, inset 2px 2px #D3FFEC;
+	}
+	50% {
+		box-shadow: 1px 1px #1D8758, 0 0 16px 8px #8FFFCF, inset 2px 2px #D3FFEC;
+	}
+}
+/* animates light across diamond */
+@keyframes sheen {
+	0%,100% {
+		left: 0;
+		opacity: 0;
+	}
+	1% {
+		opacity: 1;
+	}
+	10% {
+		left: calc(100% - 4px);
+	}
+	11%,98% {
+		left: 100%;
+		opacity: 0;
+	}
+}
+
+.orb2 {
+	width: 18px;
+	height: 18px;
+	border-radius: 50%;
+    margin-left:10px;
+    margin-top:10px;
+    background-image: radial-gradient(farthest-corner at 34px 14px, #ace6a2 25%, #449c27 35%, #daffd3 100%);
+    box-shadow: 0 0 5px 2px #a70505;
+}
+
+.orb3 {
+	width: 18px;
+	height: 18px;
+	border-radius: 50%;
+    margin-left:10px;
+    margin-top:10px;
+	background: green;
+    background-image: radial-gradient(farthest-corner at 34px 14px, #d8e6a2 25%, #ebd82a 35%, #f8ffd3 100%);
+    box-shadow: 0 0 5px 2px #a70505;
+}
+
+.orb4 {
+	width: 18px;
+	height: 18px;
+	border-radius: 50%;
+    margin-left:10px;
+    margin-top:10px;
+	background: green;
+    background-image: radial-gradient(farthest-corner at 34px 14px, #A2E6C9 25%, #eb2a2a 35%, #e08d9c 100%);
+    box-shadow: 0 0 5px 2px #a70505;
+}
+
+/* glass orb */
+.orb {
+	position: relative;
+	width: 48px;
+	height: 48px;
+	border-radius: 50%;
+    margin-left:10px;
+    margin-top:10px;
+    background: #c0f9ff;
+    background-image: radial-gradient(farthest-corner at 34px 14px, #a2e6e6 25%, #1d6f87 35%, #d3fdff 100%);
+    box-shadow: 0 0 20px 5px #c0fcff;
+	animation: orb 1.8s infinite;
+}
+.orb:before {
+	content: '';
+	display: block;
+	position: absolute;
+	width: 44px;
+	height: 44px;
+	top: 2px;
+	left: 2px;
+	background-image: radial-gradient(farthest-corner at 14px 14px, #fff 15%, #c0fff9 50%, rgba(192,255,228,0) 100%);
+	border-radius: 50%;
+}
+
+/* star shaped shine pattern */
+
+.shine {
+	position: absolute;
+	top: 3px;
+	left: 6px;
+	width: 1px;
+	height: 16px;
+	background: #fff;
+	transform: rotate(15deg);
+	box-shadow: 0 0 8px rgba(255,255,255,0.75);
+	animation: shine 10s infinite;
+}
+.shine:before, .shine:after {
+	content:'';
+	display: block;
+	position: absolute;
+}
+.shine:before {
+	top: 2px;
+	left: -2px;
+	width: 1px;
+	height: 16px;
+	background: #fff;
+	transform: rotate(-90deg);
+	box-shadow: 0 0 8px rgba(255,255,255,0.75);
+}
+.shine:after {
+	top: 6px;
+	left: -2px;
+	width: 5px;
+	height: 5px;
+	background: #fff;
+	transform: rotate(45deg);
+	box-shadow: 0 0 8px 5px rgba(255,255,255,0.75);
+}
+/* reflective line */
+.light {
+	position: absolute;
+	width: 48px;
+	height: 48px;
+	border-radius: 100%;
+	overflow: hidden;
+}
+.light:before {
+	content:'';
+	display: block;
+	position: absolute;
+	width: 2px;
+	height: 80px;
+	top: -75%;
+	left: 0;
+	transform: rotate(45deg);
+	background: rgba(255,255,255,0.5);
+	animation: sheen2 7s infinite;
+}
+/* animates orb glow */
+@keyframes orb {
+	0%,100% {
+		box-shadow: 0 0 5px 2px #8FFFCF;
+	}
+	50% {
+		box-shadow: 0 0 24px 4px #8FFFCF;
+	}
+}
+/* rotates shine */
+@keyframes shine {
+	0% {
+		opacity: 0;
+	}
+	34% {
+		opacity: 0;
+		transform: rotate(15deg);
+	}
+	40% {
+		opacity: 0.6;
+		transform: rotate(620deg);
+	}
+	48%,100% {
+		opacity: 0;
+		transform: rotate(635deg);
+	}
+}
+/* moves light reflection */
+@keyframes sheen2 {
+	0%,100% {
+		top: -75%;
+		left: 15%;
+		opacity: 0;
+		width: 2px;
+	}
+	1% {
+		opacity: 1;
+	}
+	10% {
+		width: 24px;
+	}
+	11%,18% {
+		top: 75%;
+		left: 50%;
+		width: 2px;
+		opacity: 0;
+	}
+	20% {
+		top: -75%;
+		left: 15%;
+		opacity: 0;
+		width: 1px;
+	}
+	21% {
+		opacity: 0.75;
+	}
+	30% {
+		width: 6px;
+	}
+	31%,98% {
+		top: 75%;
+		left: 50%;
+		width: 2px;
+		opacity: 0;
+	}
+}
+
+@keyframes tipsy {
+     {
+      transform: translateX(-50%) translateY(-50%) rotate(0deg);
+    }
+    100% {
+      transform: translateX(-50%) translateY(-50%) rotate(360deg);
+    }
+  }
+
+  
