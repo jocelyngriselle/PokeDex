@@ -461,4 +461,17 @@ font-size:0.9em;
     }
   }
 
+
+/* RESPONSIVE */
+
+
+@media (max-width: 640px) {
+	.main {
+		display:flex;
+		width: 90%;
+		height: 90%;
+	}
+	}
+
+
   
