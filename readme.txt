@@ -1,4 +1,4 @@
-https://zoe-cf.github.io/PokeDex/
+https://jocelyngriselle.github.io/PokeDex/
 
 
 Maquette inspiration :
