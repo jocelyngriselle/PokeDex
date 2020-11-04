@@ -8,7 +8,7 @@ function getData(id, error) {
       .then ( (pokemon) => generateHtml(pokemon))
   }
   else {
-    let apiURL = `https://pokeapi.co/api/v2/pokemon/bug`
+    let apiURL = `https://pokeapi.co/api/v2/pokemon/choupinet`
     fetch(apiURL)
       .then( (data) => data.json())
       .then ( (pokemon) => generateHtml(pokemon))
