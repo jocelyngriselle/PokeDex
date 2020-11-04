@@ -1,23 +1,31 @@
 let pokemonId = 1;
 
-function getData(id) {
-  let apiURL = `https://pokeapi.co/api/v2/pokemon/${id}`
-  fetch(apiURL)
-    .then( (data) => data.json())
-    .then ( (pokemon) => generateHtml(pokemon))
+function getData(id, error) {
+  if(!error){
+    let apiURL = `https://pokeapi.co/api/v2/pokemon/${id}`
+    fetch(apiURL)
+      .then( (data) => data.json())
+      .then ( (pokemon) => generateHtml(pokemon))
+  }
+  else {
+    let apiURL = `https://pokeapi.co/api/v2/pokemon/bug`
+    fetch(apiURL)
+      .then( (data) => data.json())
+      .then ( (pokemon) => generateHtml(pokemon))
+  }
 }
 
 
-getData(pokemonId);
+getData(pokemonId, false);
 
 function pokeSlideRight() {
   pokemonId ++;
-  getData(pokemonId);
+  getData(pokemonId, false);
 }
 
 function pokeSlideLeft() {
   pokemonId --;
-  getData(pokemonId);
+  getData(pokemonId, true);
 }
 
 const generateHtml = (data) => {
